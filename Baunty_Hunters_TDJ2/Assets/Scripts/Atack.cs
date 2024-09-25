@@ -27,9 +27,9 @@ public class Atack : MonoBehaviour
         }
     }
 
-   // private void OnDrawGizmos() 
-   // {
-   //     Gizmos.color = Color.red;
-   //     Gizmos.DrawWireSphere(ControladorGolpe.position, radioGolpe);    
-   // }
+    private void OnDrawGizmos() 
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(ControladorGolpe.position, radioGolpe);    
+    }
 }

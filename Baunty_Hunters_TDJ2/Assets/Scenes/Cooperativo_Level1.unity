@@ -228,7 +228,7 @@ Transform:
   m_GameObject: {fileID: 611026223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.412, y: -0.05, z: 0}
+  m_LocalPosition: {x: 0.191, y: -0.114, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,8 +248,8 @@ GameObject:
   - component: {fileID: 688279903}
   - component: {fileID: 688279907}
   m_Layer: 0
-  m_Name: Enemigo (2)
-  m_TagString: Untagged
+  m_Name: 'Enemigo '
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,10 +422,9 @@ GameObject:
   - component: {fileID: 912625165}
   - component: {fileID: 912625164}
   - component: {fileID: 912625163}
-  - component: {fileID: 912625168}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -585,18 +584,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &912625168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912625162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e3eb5e50a331845befec472f5477f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1053650352
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,8 +916,8 @@ GameObject:
   - component: {fileID: 1316939937}
   - component: {fileID: 1316939936}
   m_Layer: 0
-  m_Name: Enemigo (1)
-  m_TagString: Untagged
+  m_Name: 'Enemigo '
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
