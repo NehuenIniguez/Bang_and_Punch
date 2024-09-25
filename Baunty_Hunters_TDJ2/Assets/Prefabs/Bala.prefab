@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1088530063124481604}
   - component: {fileID: 1564557338407021641}
   - component: {fileID: 4872762900211095801}
-  m_Layer: 0
+  - component: {fileID: 1265179781191831953}
+  m_Layer: 6
   m_Name: Bala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.0031460226}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.44179896
 --- !u!114 &1564557338407021641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,3 +150,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoDeVida: 2
+--- !u!50 &1265179781191831953
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8625769238658994216}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

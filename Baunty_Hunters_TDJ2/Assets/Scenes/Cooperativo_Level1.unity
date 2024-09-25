@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224236836}
   - component: {fileID: 224236835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 27.01191, y: 27.657215}
+    - - {x: 27.217094, y: 28.27277}
       - {x: -20.186522, y: 28.323887}
       - {x: -20.618946, y: -3.8713717}
       - {x: 26.619032, y: -3.8976924}
@@ -196,12 +196,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224236834}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.827765, y: 6.135834, z: -34.09367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.787765, y: -1.2341657, z: -24.09367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1588328465}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611026223
 GameObject:
@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 912625165}
   - component: {fileID: 912625164}
   - component: {fileID: 912625163}
+  - component: {fileID: 912625168}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Enemigo
@@ -584,6 +585,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912625168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912625162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
+  efectoMuerte: {fileID: 0}
 --- !u!1 &1053650352
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +811,7 @@ Transform:
   m_GameObject: {fileID: 1153962144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.82, y: 3.27, z: 0}
+  m_LocalPosition: {x: -15.095, y: 3.267, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1290,6 +1305,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820978133}
+  - {fileID: 224236836}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820978132
@@ -1746,7 +1762,6 @@ SceneRoots:
   - {fileID: 1153962146}
   - {fileID: 2085108808}
   - {fileID: 1588328465}
-  - {fileID: 224236836}
   - {fileID: 912625167}
   - {fileID: 1316939940}
   - {fileID: 688279906}
