@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 144740966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.852118, y: 3.174283, z: 0}
+  m_LocalPosition: {x: 0.59, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,9 +297,9 @@ GameObject:
   - component: {fileID: 580468927}
   - component: {fileID: 580468926}
   - component: {fileID: 580468931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hexagon Flat-Top
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322186e4ba8cf5a4cb409644f59d9579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ControladorDisparo: {fileID: 0}
+  ControladorDisparo: {fileID: 874884529}
   bala: {fileID: 8625769238658994216, guid: a3542f049d18a60498e44e7e9cf42259, type: 3}
 --- !u!1 &806768593
 GameObject:
@@ -626,7 +626,7 @@ Transform:
   m_GameObject: {fileID: 874884528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8178816, y: 3.264283, z: 0}
+  m_LocalPosition: {x: 0.56, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 1153684595}
   m_Layer: 0
   m_Name: Hexagon Flat-Top (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 1153684588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.36, y: -4.1, z: 0}
+  m_LocalPosition: {x: 4.25, y: -4.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
