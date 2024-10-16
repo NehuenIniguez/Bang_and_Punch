@@ -381,6 +381,7 @@
 "Assets/Scripts/Enemigo - Copy.cs"
 "Assets/Scripts/Enemigo.cs"
 "Assets/Scripts/Enemy_Controler.cs"
+"Assets/Scripts/LevelSelector.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Movement_and_Atack.cs"
 "Assets/Scripts/Movimiento_Ligo_Malo.cs"

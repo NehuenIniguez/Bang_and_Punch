@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFA principal.unity"
     guid: 8d40943af7f88234b839f78fddf8333c
   - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 747dce1a8f1130043b20c6e855be2fd6
+  - enabled: 1
+    path: Assets/Scenes/SelectorModo.unity
+    guid: 04e6625dc94c1e64583add7b79a0e67d
+  - enabled: 1
     path: Assets/Scenes/Cooperativo_Level1.unity
     guid: 25863c59db6363d43a672e63eef1378e
   - enabled: 1

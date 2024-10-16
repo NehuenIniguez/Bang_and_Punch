@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void jugar_1()
+    public void Modo()
     {
-        SceneManager.LoadScene("Cooperativo_Level1");
+        SceneManager.LoadScene("SelectorModo");
     }
-    public void jugar_2()
+    public void Settings()
     {
-        SceneManager.LoadScene("Versus");
+        SceneManager.LoadScene("Settings");
     }
  
 }
