@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 183661484}
   m_Layer: 0
   m_Name: Plataforma-cae
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc2acf010711d74ba12607d1f5267a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tcaida: 1.5
+  Tcaida: 0.5
+  player: {fileID: 2085108805}
 --- !u!50 &183661485
 Rigidbody2D:
   serializedVersion: 4
@@ -4395,7 +4396,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 2.25
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
