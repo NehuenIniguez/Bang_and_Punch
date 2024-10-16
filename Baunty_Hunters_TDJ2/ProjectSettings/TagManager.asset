@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Piso
   - Enemigo
+  - Bala
   layers:
   - Default
   - TransparentFX
