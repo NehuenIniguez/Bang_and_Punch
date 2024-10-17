@@ -10,7 +10,7 @@ public class Disparo_Ligo : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+         if (Input.GetKeyDown(KeyCode.RightControl))
         {
             //dispara
             Disparo();

@@ -10,7 +10,7 @@ public class Atack : MonoBehaviour
 
     private void Update() 
     {
-      if ( Input.GetButtonDown("Fire1"))
+      if ( Input.GetButtonDown("Jump"))
      {
         Golpe();
      }
