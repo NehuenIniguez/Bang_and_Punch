@@ -24,6 +24,10 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
             }
+            if (collisionador.CompareTag("Pared"))
+            {
+                collisionador.transform.GetComponent<VidaPared>().TomarDaño(dañoGolpe);
+            }
         }
     }
 
