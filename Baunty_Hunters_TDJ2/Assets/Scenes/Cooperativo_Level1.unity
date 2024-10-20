@@ -4256,6 +4256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   efectoMuerte: {fileID: 0}
+  "da\xF1oEnemigo": 20
 --- !u!1 &912625162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,6 +4447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   efectoMuerte: {fileID: 0}
+  "da\xF1oEnemigo": 20
 --- !u!1 &1153962144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,8 +4463,9 @@ GameObject:
   - component: {fileID: 1153962149}
   - component: {fileID: 1153962150}
   - component: {fileID: 1153962151}
+  - component: {fileID: 1153962152}
   m_Layer: 3
-  m_Name: 9-Sliced
+  m_Name: Punch
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4656,6 +4659,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1153962152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153962144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78137c04752b9ca48a2ec244c63a40a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaActual: 100
+  vidaMaxima: 100
 --- !u!1 &1163613690
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,6 +5263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   efectoMuerte: {fileID: 0}
+  "da\xF1oEnemigo": 20
 --- !u!1 &1482846207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,8 +5909,9 @@ GameObject:
   - component: {fileID: 2085108809}
   - component: {fileID: 2085108811}
   - component: {fileID: 2085108812}
+  - component: {fileID: 2085108813}
   m_Layer: 3
-  m_Name: Hexagon Flat-Top
+  m_Name: Bang
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6086,6 +6105,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2085108813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085108805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78137c04752b9ca48a2ec244c63a40a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaActual: 100
+  vidaMaxima: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
