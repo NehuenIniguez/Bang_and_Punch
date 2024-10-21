@@ -10,10 +10,23 @@ public class Atack : MonoBehaviour
 
     private void Update() 
     {
+      
+      if (Input.GetKeyDown(KeyCode.A))
+        {    
+         transform.Rotate(0, -180, 0);
+        // También rotar manualmente el ControladorGolpe y otros objetos
+         ControladorGolpe.Rotate(-180, -180, 0); // Esto es solo si el ControladorGolpe necesita rotación manual
+        }
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            transform.Rotate(0, 180, 0);
+            ControladorGolpe.Rotate(180, 180, 0);
+        }
+
       if ( Input.GetButtonDown("Jump"))
-     {
-        Golpe();
-     }
+      {
+            Golpe();
+      }
     }
     private void Golpe()
     {
@@ -28,6 +41,11 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<VidaPared>().TomarDaño(dañoGolpe);
             }
+            if (collisionador.CompareTag("Palanca"))
+            {
+                collisionador.transform.GetComponent<Palanca>().Destructor(true);
+            }
+            
         }
     }
 

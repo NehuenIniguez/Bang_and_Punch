@@ -9,6 +9,8 @@ TagManager:
   - Bala
   - Pared
   - Agua
+  - PlayerTwo
+  - Palanca
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Bala
-  - 
+  - PlayerTwo
   - 
   - 
   - 
