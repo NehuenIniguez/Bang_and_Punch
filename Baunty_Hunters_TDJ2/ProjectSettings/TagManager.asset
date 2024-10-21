@@ -11,6 +11,7 @@ TagManager:
   - Agua
   - PlayerTwo
   - Palanca
+  - Reliquia
   layers:
   - Default
   - TransparentFX
