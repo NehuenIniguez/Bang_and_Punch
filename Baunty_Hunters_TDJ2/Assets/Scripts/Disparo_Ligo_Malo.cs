@@ -8,12 +8,25 @@ public class Disparo_Ligo_Malo : MonoBehaviour
 
     [SerializeField] private GameObject bala;
     
+    private bool esIzquierda = false;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
             //dispara
             Disparo();
+        }
+        if (Input.GetKeyDown(KeyCode.A) && !esIzquierda)
+        {
+            transform.Rotate(0, -180, 0);
+            esIzquierda = true;
+            ControladorDisparo.Rotate(-180, -180, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.D) && esIzquierda)
+        {
+            transform.Rotate(0, -180, 0);
+            esIzquierda = false;
+            ControladorDisparo.Rotate(-180, -180, 0);
         }
 
 

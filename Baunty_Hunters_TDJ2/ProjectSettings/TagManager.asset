@@ -12,6 +12,7 @@ TagManager:
   - PlayerTwo
   - Palanca
   - Reliquia
+  - Music
   layers:
   - Default
   - TransparentFX

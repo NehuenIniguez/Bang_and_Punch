@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movimiento_Ligo_Malo : MonoBehaviour
 {
     public float brinco = 0;
+    
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +16,7 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(-10f* Time.deltaTime,0,0);
+            gameObject.transform.Translate(10f* Time.deltaTime,0,0);
         }
         if (Input.GetKeyDown(KeyCode.W) && brinco <2)
         {
