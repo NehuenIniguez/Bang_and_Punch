@@ -11,22 +11,22 @@ public class Disparo_Ligo_Malo : MonoBehaviour
     private bool esIzquierda = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             //dispara
             Disparo();
         }
         if (Input.GetKeyDown(KeyCode.A) && !esIzquierda)
         {
-            transform.Rotate(0, -180, 0);
-            esIzquierda = true;
+            transform.Rotate(-180, -180, 0);
             ControladorDisparo.Rotate(-180, -180, 0);
+            esIzquierda = true;
         }
         if (Input.GetKeyDown(KeyCode.D) && esIzquierda)
         {
-            transform.Rotate(0, -180, 0);
+            transform.Rotate(0, 180, 0);
+            ControladorDisparo.Rotate(180, 180, 0);
             esIzquierda = false;
-            ControladorDisparo.Rotate(-180, -180, 0);
         }
 
 

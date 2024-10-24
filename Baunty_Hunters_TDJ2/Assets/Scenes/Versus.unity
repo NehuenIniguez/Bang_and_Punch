@@ -3133,6 +3133,7 @@ GameObject:
   - component: {fileID: 580468927}
   - component: {fileID: 580468926}
   - component: {fileID: 580468931}
+  - component: {fileID: 580468932}
   m_Layer: 3
   m_Name: Hexagon Flat-Top
   m_TagString: Player
@@ -3185,18 +3186,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.018779278, y: 0.029393673}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.8828125}
+    pivot: {x: 0.4140351, y: 0.3678364}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8828125}
+  m_Size: {x: 0.6978998, y: 0.82402515}
   m_EdgeRadius: 0
 --- !u!50 &580468928
 Rigidbody2D:
@@ -3266,7 +3267,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: -2120493379, guid: b8b11b7406407e942a20bc4b61bc1f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3307,6 +3308,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControladorDisparo: {fileID: 874884529}
   bala: {fileID: 8625769238658994216, guid: a3542f049d18a60498e44e7e9cf42259, type: 3}
+--- !u!95 &580468932
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580468925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 762757bbccb58cc4abaee84278277c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &874884528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3440,6 +3462,7 @@ GameObject:
   - component: {fileID: 1153684590}
   - component: {fileID: 1153684594}
   - component: {fileID: 1153684595}
+  - component: {fileID: 1153684596}
   m_Layer: 0
   m_Name: Hexagon Flat-Top (1)
   m_TagString: Player
@@ -3614,6 +3637,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControladorDisparo: {fileID: 144740967}
   bala: {fileID: 8625769238658994216, guid: a3542f049d18a60498e44e7e9cf42259, type: 3}
+--- !u!95 &1153684596
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153684588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84b5110d804952a49835c429a2bc7fdc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1517993948
 GameObject:
   m_ObjectHideFlags: 0

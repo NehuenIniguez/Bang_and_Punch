@@ -7,11 +7,11 @@ public class Movimiento_y_ataque : MonoBehaviour
     public float salto = 1;
      
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey("right"))
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+           // gameObject.GetComponent<SpriteRenderer>().flipX = false;
             gameObject.transform.Translate(10f* Time.deltaTime,0,0);
         }
         if (Input.GetKey("left"))
