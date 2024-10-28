@@ -18,6 +18,9 @@ public class Movimiento_y_ataque : MonoBehaviour
         {
             gameObject.transform.Translate(10f* Time.deltaTime,0,0);
         }
+        
+    }
+    private void Update() {
         if (Input.GetKeyDown("up") && salto <2) 
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,400f));
