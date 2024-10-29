@@ -10,9 +10,13 @@ public class Enemigo : MonoBehaviour
 
      private void OnCollisionEnter (Collision other) {
        
+        
+    }
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ( 20, other.GetContact(0).normal);
+            //other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ( 20, other.GetContact(0).normal);
         }
     }
 

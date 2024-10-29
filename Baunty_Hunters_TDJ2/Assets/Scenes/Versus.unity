@@ -3342,9 +3342,10 @@ GameObject:
   - component: {fileID: 647504677}
   - component: {fileID: 647504676}
   - component: {fileID: 647504675}
+  - component: {fileID: 647504678}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,6 +3503,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 60
   efectoMuerte: {fileID: 0}
+--- !u!114 &647504678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647504672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2fbed6c791fed4e9773c597379a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1153684593}
+  playerTwo: {fileID: 580468930}
+  detectionradius: 5
+  speed: 2
 --- !u!1 &774758849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,9 +3532,10 @@ GameObject:
   - component: {fileID: 774758852}
   - component: {fileID: 774758851}
   - component: {fileID: 774758850}
+  - component: {fileID: 774758855}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3675,6 +3693,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774758855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774758849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2fbed6c791fed4e9773c597379a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 580468930}
+  playerTwo: {fileID: 1153684593}
+  detectionradius: 5
+  speed: 2
 --- !u!1 &874884528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23a08595e3f3bb48b3673d4fc6f0ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Reliquia: {fileID: 1091858383}
+  Player: {fileID: 0}
+  playerTwo: {fileID: 0}
 --- !u!212 &1091858385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4314,9 +4349,10 @@ GameObject:
   - component: {fileID: 1566142833}
   - component: {fileID: 1566142832}
   - component: {fileID: 1566142831}
+  - component: {fileID: 1566142836}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4474,6 +4510,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566142836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566142830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2fbed6c791fed4e9773c597379a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 580468930}
+  playerTwo: {fileID: 1153684593}
+  detectionradius: 5
+  speed: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
