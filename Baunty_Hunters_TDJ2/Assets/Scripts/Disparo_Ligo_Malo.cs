@@ -18,14 +18,18 @@ public class Disparo_Ligo_Malo : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.A) && !esIzquierda)
         {
-            transform.Rotate(-180, -180, 0);
-            ControladorDisparo.Rotate(-180, -180, 0);
+            transform.Rotate(0, -180, 0);
+
+            ControladorDisparo.Rotate(-180, 0, 0);
+
             esIzquierda = true;
         }
         if (Input.GetKeyDown(KeyCode.D) && esIzquierda)
         {
             transform.Rotate(0, 180, 0);
-            ControladorDisparo.Rotate(180, 180, 0);
+
+            ControladorDisparo.Rotate(180, 0, 0);
+
             esIzquierda = false;
         }
 

@@ -118,7 +118,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00022241041, y: -0.00051256013}
@@ -187,8 +187,9 @@ Animation:
   m_GameObject: {fileID: 8625769238658994216}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: e611191dc3b0cbd428e97690518a0b34, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e611191dc3b0cbd428e97690518a0b34, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
