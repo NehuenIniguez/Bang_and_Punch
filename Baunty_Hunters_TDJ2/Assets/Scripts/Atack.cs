@@ -59,6 +59,7 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<Palanca>().Destructor(true);
             }
+            
           animator.SetTrigger("Atack");
         }
     }
