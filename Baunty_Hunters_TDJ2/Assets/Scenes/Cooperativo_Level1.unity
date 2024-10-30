@@ -5296,13 +5296,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984525505}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.008726132, y: -0.008726132, z: -0.00007615118, w: 0.9999238}
+  m_LocalRotation: {x: 0, y: -0.999962, z: 0.008726558, w: 0}
   m_LocalPosition: {x: -0.414, y: -0.303, z: -0.01}
-  m_LocalScale: {x: -1, y: -1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1316939940}
-  m_LocalEulerAnglesHint: {x: -1, y: -1, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: -180, z: 0}
 --- !u!1 &1153962144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,7 +5387,7 @@ Transform:
   m_GameObject: {fileID: 1153962144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.71, y: 12.8, z: 0}
+  m_LocalPosition: {x: -17.11, y: 16.82, z: 0}
   m_LocalScale: {x: 2.3, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5493,6 +5493,8 @@ MonoBehaviour:
   ControladorGolpe: {fileID: 611026224}
   radioGolpe: 0.8
   "da\xF1oGolpe": 20
+  tiempoEntreAtaques: 0.5
+  tiempoSiguienteAtaque: 0
 --- !u!95 &1153962151
 Animator:
   serializedVersion: 5

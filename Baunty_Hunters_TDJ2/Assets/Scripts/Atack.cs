@@ -7,11 +7,21 @@ public class Atack : MonoBehaviour
     [SerializeField] private Transform ControladorGolpe;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
+    [SerializeField] private float tiempoEntreAtaques;
+    [SerializeField] private float tiempoSiguienteAtaque;
     private bool esIzquierda = false;
+    private Animator animator;
+
+    private void Start() {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update() 
     {
-      
+      if (tiempoSiguienteAtaque > 0)
+      {
+        tiempoSiguienteAtaque -= Time.deltaTime;
+      }
       if (Input.GetKeyDown(KeyCode.A) && !esIzquierda)
         {    
          transform.Rotate(0, -180, 0);
@@ -26,13 +36,14 @@ public class Atack : MonoBehaviour
             ControladorGolpe.Rotate(180, 180, 0);
         }
 
-      if ( Input.GetButtonDown("Jump"))
+      if ( Input.GetButtonDown("Jump") && tiempoSiguienteAtaque<=0)
       {
             Golpe();
+            tiempoSiguienteAtaque = tiempoEntreAtaques;
       }
     }
     private void Golpe()
-    {
+    { 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(ControladorGolpe.position, radioGolpe);
         foreach(Collider2D collisionador in objetos)
         {
@@ -48,7 +59,7 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<Palanca>().Destructor(true);
             }
-            
+          animator.SetTrigger("Atack");
         }
     }
 
