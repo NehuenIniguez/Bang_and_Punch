@@ -5099,6 +5099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 583706553}
   Pincho: {fileID: 4537572537427874181, guid: 6c8a80d6ce912454696cd698ec474341, type: 3}
+  tiempoEntreDisparos: 1
 --- !u!1 &912911885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,8 +5297,8 @@ Transform:
   m_GameObject: {fileID: 984525505}
   serializedVersion: 2
   m_LocalRotation: {x: -0.008726132, y: -0.008726132, z: -0.00007615118, w: 0.9999238}
-  m_LocalPosition: {x: -0.436, y: -0.29, z: -0.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.414, y: -0.303, z: -0.01}
+  m_LocalScale: {x: -1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1316939940}
@@ -5386,7 +5387,7 @@ Transform:
   m_GameObject: {fileID: 1153962144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.99, y: 8.85, z: 0}
+  m_LocalPosition: {x: -6.71, y: 12.8, z: 0}
   m_LocalScale: {x: 2.3, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6081,7 +6082,7 @@ Transform:
   m_GameObject: {fileID: 1316939935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.638, y: 16.997, z: 0}
+  m_LocalPosition: {x: -3.97, y: 16.997, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6116,6 +6117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 984525506}
   Pincho: {fileID: 4537572537427874181, guid: 6c8a80d6ce912454696cd698ec474341, type: 3}
+  tiempoEntreDisparos: 1
 --- !u!1 &1347809430
 GameObject:
   m_ObjectHideFlags: 0
