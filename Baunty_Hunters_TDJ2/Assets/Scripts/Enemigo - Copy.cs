@@ -6,18 +6,13 @@ public class Enemigo : MonoBehaviour
 {
     [SerializeField] private float vida;
     [SerializeField] private GameObject efectoMuerte;
-    
-
-     private void OnCollisionEnter (Collision other) {
-       
-        
-    }
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if (other.gameObject.CompareTag("Player"))
+          if (other.gameObject.CompareTag("PlayerTwo"))
         {
-            //other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ( 20, other.GetContact(0).normal);
+            other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ( 20);
         }
+        
     }
 
     public void TomarDaño (float Daño)
