@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Movement_and_Atack : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator animator;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -15,15 +15,22 @@ public class Movement_and_Atack : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-           // gameObject.GetComponent<SpriteRenderer>().flipX = false;
             gameObject.transform.Translate(4f* Time.deltaTime,0,0);
+            animator.SetBool("SeMueve", true);
         }
         if (Input.GetKey(KeyCode.A))
-        {
-            //gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        {  
             gameObject.transform.Translate(4f* Time.deltaTime,0,0);
+            animator.SetBool("SeMueve", true);
         }
-        
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("SeMueve", false);
+        }
+         if (Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("SeMueve", false);
+        }
         
     }
 }

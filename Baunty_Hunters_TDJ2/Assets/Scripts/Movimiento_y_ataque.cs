@@ -1,22 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Movimiento_y_ataque : MonoBehaviour
 {
+    private Animator animator;
+    
     public float salto = 1;
-     
+     private void Start() {
+        animator = GetComponent<Animator>();
+     }
     // Update is called once per frame
     void FixedUpdate()
     {
         if (Input.GetKey("right"))
         {
-           // gameObject.GetComponent<SpriteRenderer>().flipX = false;
             gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            animator.SetBool("Derecha", true );   
         }
+
         if (Input.GetKey("left"))
         {
             gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            animator.SetBool("Derecha", true );
+        }
+
+        if (Input.GetKeyUp("right"))
+        {   
+            animator.SetBool("Derecha", false);
+        }
+        
+        if( Input.GetKeyUp("left"))
+        {
+            animator.SetBool("Derecha", false);
         }
         
     }
