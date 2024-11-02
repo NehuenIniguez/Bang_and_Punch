@@ -8,7 +8,11 @@ public class Disparo_Ligo : MonoBehaviour
 
     [SerializeField] private GameObject bala;
     private bool esIzquierda = false;
-
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip disparo;
+    private void Start() {
+        audioSource = GetComponent <AudioSource>();
+    }
     
     private void Update()
     {
@@ -16,6 +20,7 @@ public class Disparo_Ligo : MonoBehaviour
         {
             //dispara
             Disparo();
+            audioSource.PlayOneShot(disparo);
         }
         if (Input.GetKey("right") && esIzquierda)
         {

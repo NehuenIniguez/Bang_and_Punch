@@ -11,9 +11,12 @@ public class Atack : MonoBehaviour
     [SerializeField] private float tiempoSiguienteAtaque;
     private bool esIzquierda = false;
     private Animator animator;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip pega;
 
     private void Start() {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update() 
@@ -61,6 +64,7 @@ public class Atack : MonoBehaviour
             }
             
           animator.SetTrigger("Atack");
+          audioSource.PlayOneShot(pega);
         }
     }
 

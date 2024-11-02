@@ -5,9 +5,12 @@ using UnityEngine;
 public class Movement_and_Atack : MonoBehaviour
 {
     private Animator animator;
+     private AudioSource audioSource;
+    [SerializeField] private AudioClip seMueve;
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,11 +20,13 @@ public class Movement_and_Atack : MonoBehaviour
         {
             gameObject.transform.Translate(4f* Time.deltaTime,0,0);
             animator.SetBool("SeMueve", true);
+            audioSource.PlayOneShot(seMueve);
         }
         if (Input.GetKey(KeyCode.A))
         {  
             gameObject.transform.Translate(4f* Time.deltaTime,0,0);
             animator.SetBool("SeMueve", true);
+            audioSource.PlayOneShot(seMueve);
         }
         if (Input.GetKeyUp(KeyCode.A))
         {

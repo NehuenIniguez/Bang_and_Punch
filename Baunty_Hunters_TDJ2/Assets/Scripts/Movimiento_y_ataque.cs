@@ -7,10 +7,14 @@ using UnityEngine.UIElements;
 public class Movimiento_y_ataque : MonoBehaviour
 {
     private Animator animator;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip saltarin;
+
     
     public float salto = 1;
      private void Start() {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
      }
     // Update is called once per frame
     void FixedUpdate()
@@ -31,7 +35,7 @@ public class Movimiento_y_ataque : MonoBehaviour
         {   
             animator.SetBool("Derecha", false);
         }
-        
+
         if( Input.GetKeyUp("left"))
         {
             animator.SetBool("Derecha", false);
@@ -44,6 +48,7 @@ public class Movimiento_y_ataque : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,400f));
             salto = salto + 1;
             Debug.Log(salto);
+            audioSource.PlayOneShot(saltarin);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
