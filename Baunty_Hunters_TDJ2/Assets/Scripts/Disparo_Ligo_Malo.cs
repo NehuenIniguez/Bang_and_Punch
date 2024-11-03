@@ -11,7 +11,7 @@ public class Disparo_Ligo_Malo : MonoBehaviour
     private bool esIzquierda = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetButtonDown("Jump"))
         {
             //dispara
             Disparo();
