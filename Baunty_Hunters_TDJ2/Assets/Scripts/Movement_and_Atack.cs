@@ -18,15 +18,15 @@ public class Movement_and_Atack : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(4f* Time.deltaTime,0,0);
             animator.SetBool("SeMueve", true);
-            audioSource.PlayOneShot(seMueve);
+            gameObject.transform.Translate(4f* Time.deltaTime,0,0);
+            //audioSource.PlayOneShot(seMueve);
         }
         if (Input.GetKey(KeyCode.A))
         {  
             gameObject.transform.Translate(4f* Time.deltaTime,0,0);
             animator.SetBool("SeMueve", true);
-            audioSource.PlayOneShot(seMueve);
+            //audioSource.PlayOneShot(seMueve);
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
@@ -35,7 +35,10 @@ public class Movement_and_Atack : MonoBehaviour
          if (Input.GetKeyUp(KeyCode.D))
         {
             animator.SetBool("SeMueve", false);
-        }
-        
+        } 
+    }
+    public void Sound()
+    {
+        audioSource.PlayOneShot(seMueve);
     }
 }

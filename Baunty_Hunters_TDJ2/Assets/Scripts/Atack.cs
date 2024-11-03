@@ -62,6 +62,11 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<Palanca>().Destructor(true);
             }
+            if (collisionador.CompareTag("pincho"))
+            {
+                collisionador.transform.GetComponent<Pincho>().DestruirPincho(dañoGolpe);
+                Destroy(gameObject);
+            }
             
           animator.SetTrigger("Atack");
           audioSource.PlayOneShot(pega);

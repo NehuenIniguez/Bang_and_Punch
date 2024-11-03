@@ -21,13 +21,13 @@ public class Movimiento_y_ataque : MonoBehaviour
     {
         if (Input.GetKey("right"))
         {
-            gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            gameObject.transform.Translate(8f* Time.deltaTime,0,0);
             animator.SetBool("Derecha", true );   
         }
 
         if (Input.GetKey("left"))
         {
-            gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            gameObject.transform.Translate(8f* Time.deltaTime,0,0);
             animator.SetBool("Derecha", true );
         }
 
@@ -42,13 +42,19 @@ public class Movimiento_y_ataque : MonoBehaviour
         }
         
     }
-    private void Update() {
+    private void Update() 
+    {
         if (Input.GetKeyDown("up") && salto <2) 
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,400f));
             salto = salto + 1;
             Debug.Log(salto);
             audioSource.PlayOneShot(saltarin);
+            animator.SetBool("Salta", true);
+        }
+        if (Input.GetKeyUp("up"))
+        {
+            animator.SetBool("Salta", false);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

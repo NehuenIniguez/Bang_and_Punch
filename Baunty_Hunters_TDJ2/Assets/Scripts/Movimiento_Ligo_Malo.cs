@@ -12,11 +12,11 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
         //Se agregan teclas y movimientos de las teclas 
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            gameObject.transform.Translate(8f* Time.deltaTime,0,0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(10f* Time.deltaTime,0,0);
+            gameObject.transform.Translate(8f* Time.deltaTime,0,0);
         }
         if (Input.GetKeyDown(KeyCode.W) && brinco <2)
         {
