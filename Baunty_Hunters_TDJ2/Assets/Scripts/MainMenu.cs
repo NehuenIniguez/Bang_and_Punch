@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip Confirmar;
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void Modo()
     {
+        audioSource.PlayOneShot(Confirmar);
         SceneManager.LoadScene("SelectorModo");
+        
     }
     public void Settings()
     {
