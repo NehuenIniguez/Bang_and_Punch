@@ -9,10 +9,9 @@ public class Bala : MonoBehaviour
     [SerializeField] private float daño;
 
     private void Update()
-        {
-            transform.Translate(Vector2.right * velocidad * Time.deltaTime);
-        }   
-
+    {
+        transform.Translate(Vector2.right * velocidad * Time.deltaTime);
+    }   
     private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log(other.gameObject.name);
         if (other.gameObject.CompareTag("Enemigo"))

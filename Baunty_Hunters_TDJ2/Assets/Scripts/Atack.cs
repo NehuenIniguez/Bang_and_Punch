@@ -45,43 +45,34 @@ public class Atack : MonoBehaviour
             tiempoSiguienteAtaque = tiempoEntreAtaques;
       }
     }
-    private void Golpe()
+    public void Golpe()
     { 
-        Collider2D[] objetos = Physics2D.OverlapCircleAll(ControladorGolpe.position, radioGolpe);
-        foreach(Collider2D collisionador in objetos)
-        {
-            if (collisionador.CompareTag("Enemigo"))
-            {
-                collisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
-            }
-            if (collisionador.CompareTag("Pared"))
-            {
-                collisionador.transform.GetComponent<VidaPared>().TomarDaño(dañoGolpe);
-            }
-            if (collisionador.CompareTag("Palanca"))
-            {
-                collisionador.transform.GetComponent<Palanca>().Destructor(true);
-            }
-            if (collisionador.CompareTag("Pincho"))
-            {
-                collisionador.transform.GetComponent<Pincho>().DestruirPincho();
-                
-            }
-            
-            Debug.Log(collisionador);
-          animator.SetTrigger("Atack"); 
-          audioSource.PlayOneShot(pega);
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collisionador) 
-    {
-      if (collisionador.CompareTag("pincho"))
+      Collider2D[] objetos = Physics2D.OverlapCircleAll(ControladorGolpe.position, radioGolpe);
+      foreach(Collider2D collisionador in objetos)
       {
-        collisionador.transform.GetComponent<Pincho>().DestruirPincho();
+        if (collisionador.CompareTag("Enemigo"))
+        {
+          collisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+        }
+        if (collisionador.CompareTag("Pared"))
+        {
+          collisionador.transform.GetComponent<VidaPared>().TomarDaño(dañoGolpe);
+        }
+        if (collisionador.CompareTag("Palanca"))
+        {
+          collisionador.transform.GetComponent<Palanca>().Destructor(true);
+        }
+        if (collisionador.CompareTag("Pincho"))
+        {
+          collisionador.transform.GetComponent<Pincho>().DestruirPincho();
+            
+        }
         
-      }   
+        Debug.Log(collisionador);
+        animator.SetTrigger("Atack"); 
+        audioSource.PlayOneShot(pega);
+      }
     }
-
     private void OnDrawGizmos() 
     {
         Gizmos.color = Color.red;

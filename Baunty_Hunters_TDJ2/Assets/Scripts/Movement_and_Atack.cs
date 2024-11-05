@@ -28,6 +28,7 @@ public class Movement_and_Atack : MonoBehaviour
             animator.SetBool("SeMueve", true);
             //audioSource.PlayOneShot(seMueve);
         }
+        
         if (Input.GetKeyUp(KeyCode.A))
         {
             animator.SetBool("SeMueve", false);
