@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144740967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ControladorDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3247,7 +3247,7 @@ GameObject:
   - component: {fileID: 580468926}
   - component: {fileID: 580468931}
   - component: {fileID: 580468932}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Hexagon Flat-Top
   m_TagString: PlayerTwo
   m_Icon: {fileID: 0}
@@ -3267,6 +3267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saltarin: {fileID: 0}
+  sePuedeMover: 1
+  velocidadRebte: {x: 10, y: 10}
+  tiempoRetroceso: 1
   salto: 0
 --- !u!61 &580468927
 BoxCollider2D:
@@ -3421,7 +3424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControladorDisparo: {fileID: 874884529}
-  bala: {fileID: 2325588670248281346, guid: 52ca638bc3a34174a8cd74abe109988f, type: 3}
+  bala: {fileID: 2612679762190949017, guid: 0088e5ebc4f41aa4f88a5e77d579d162, type: 3}
   disparo: {fileID: 0}
 --- !u!95 &580468932
 Animator:
@@ -3833,7 +3836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 874884529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ControladorDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3959,6 +3962,7 @@ GameObject:
   - component: {fileID: 929842427}
   - component: {fileID: 929842426}
   - component: {fileID: 929842433}
+  - component: {fileID: 929842434}
   m_Layer: 3
   m_Name: PjMalo
   m_TagString: PlayerMalo
@@ -4014,6 +4018,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brinco: 0
+  sePuedeMover: 1
+  velocidadRebte: {x: 10, y: 10}
+  tiempoRetroceso: 1
 --- !u!50 &929842429
 Rigidbody2D:
   serializedVersion: 4
@@ -4169,6 +4176,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &929842434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929842425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78137c04752b9ca48a2ec244c63a40a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaActual: 0
+  vidaMaxima: 0
 --- !u!1 &1091858383
 GameObject:
   m_ObjectHideFlags: 0
