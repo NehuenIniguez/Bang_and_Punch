@@ -4660,7 +4660,7 @@ Transform:
   m_GameObject: {fileID: 347663354}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: 4.94, z: 0}
+  m_LocalPosition: {x: -4.77, y: 4.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5042,7 +5042,7 @@ Transform:
   m_GameObject: {fileID: 611026223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.191, y: -0.032, z: 0}
+  m_LocalPosition: {x: 0.312, y: -0.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5825,7 +5825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 583706553}
   Pincho: {fileID: 9166511966130632604, guid: 4d533ffc2c52b3844b596d8fad5c7e25, type: 3}
-  tiempoEntreDisparos: 1.5
+  tiempoEntreDisparos: 2
   disparoPincho: {fileID: 8300000, guid: a74b3118efabf644ca1a745aa98981de, type: 3}
 --- !u!82 &912625170
 AudioSource:
@@ -6241,7 +6241,7 @@ Transform:
   m_GameObject: {fileID: 984525505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.999962, z: 0.008726558, w: 0}
-  m_LocalPosition: {x: -1.03, y: -0.01, z: -0.02}
+  m_LocalPosition: {x: -1.03, y: -0.24, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6332,7 +6332,7 @@ Transform:
   m_GameObject: {fileID: 1153962144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.54, y: 16.82, z: 0}
+  m_LocalPosition: {x: -17.07, y: 16.82, z: 0}
   m_LocalScale: {x: 2.3, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6872,7 +6872,7 @@ Transform:
   m_GameObject: {fileID: 1276404007}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7176,7 +7176,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.047887802, y: -0.037449837}
+  m_Offset: {x: -0.0565387, y: -0.037449837}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7187,7 +7187,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.80397797, y: 1.2295971}
+  m_Size: {x: 1.012831, y: 1.2295971}
   m_EdgeRadius: 0
 --- !u!50 &1316939938
 Rigidbody2D:
@@ -7312,7 +7312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 984525506}
   Pincho: {fileID: 9166511966130632604, guid: 4d533ffc2c52b3844b596d8fad5c7e25, type: 3}
-  tiempoEntreDisparos: 1.5
+  tiempoEntreDisparos: 2
   disparoPincho: {fileID: 8300000, guid: a74b3118efabf644ca1a745aa98981de, type: 3}
 --- !u!82 &1316939943
 AudioSource:
@@ -9086,6 +9086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saltarin: {fileID: 8300000, guid: 52443ba8436f19440aacdc6c30a4953f, type: 3}
+  sePuedeMover: 1
+  velocidadRebte: {x: 0, y: 0}
+  tiempoRetroceso: 0
   salto: 0
 --- !u!212 &2085108807
 SpriteRenderer:
@@ -9148,7 +9151,7 @@ Transform:
   m_GameObject: {fileID: 2085108805}
   serializedVersion: 2
   m_LocalRotation: {x: -0.008726465, y: 0, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 2.57, y: 3.4, z: -0.08}
+  m_LocalPosition: {x: 0.24, y: 3.4, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
