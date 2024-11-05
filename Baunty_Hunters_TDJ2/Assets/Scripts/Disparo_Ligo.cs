@@ -10,17 +10,24 @@ public class Disparo_Ligo : MonoBehaviour
     private bool esIzquierda = false;
     private AudioSource audioSource;
     [SerializeField] private AudioClip disparo;
+    private Animator animator;
     private void Start() {
         audioSource = GetComponent <AudioSource>();
+        animator = GetComponent<Animator>();
     }
     
     private void Update()
     {
          if (Input.GetKeyDown(KeyCode.RightControl))
         {
+            animator.SetBool("Dispara", true);
             //dispara
             Disparo();
             audioSource.PlayOneShot(disparo);
+        }
+        if (Input.GetKeyUp(KeyCode.RightControl))
+        {
+            animator.SetBool("Dispara", false);
         }
         if (Input.GetKey("right") && esIzquierda)
         {
@@ -39,6 +46,7 @@ public class Disparo_Ligo : MonoBehaviour
     }
     private void Disparo()
     {
+        
         Instantiate(bala, ControladorDisparo.position, ControladorDisparo.rotation);
     }
 }
