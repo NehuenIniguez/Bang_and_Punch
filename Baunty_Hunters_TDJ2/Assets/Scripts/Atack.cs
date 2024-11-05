@@ -14,9 +14,10 @@ public class Atack : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] private AudioClip pega;
 
-    private void Start() {
-        animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+    private void Start() 
+    {
+      animator = GetComponent<Animator>();
+      audioSource = GetComponent<AudioSource>();
     }
 
     private void Update() 

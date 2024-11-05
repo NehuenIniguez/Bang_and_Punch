@@ -10,7 +10,7 @@ public class Enemigo : MonoBehaviour
     {
           if (other.gameObject.CompareTag("PlayerTwo"))
         {
-            other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ( 20);
+            other.gameObject.transform.GetComponent<Vida_PJ>().Daño_PJ(1);
         }
         
     }
