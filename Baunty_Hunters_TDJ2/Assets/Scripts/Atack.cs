@@ -62,15 +62,24 @@ public class Atack : MonoBehaviour
             {
                 collisionador.transform.GetComponent<Palanca>().Destructor(true);
             }
-            if (collisionador.CompareTag("pincho"))
+            if (collisionador.CompareTag("Pincho"))
             {
-                collisionador.transform.GetComponent<Pincho>().DestruirPincho(dañoGolpe);
-                Destroy(gameObject);
+                collisionador.transform.GetComponent<Pincho>().DestruirPincho();
+                
             }
             
-          animator.SetTrigger("Atack");
+            Debug.Log(collisionador);
+          animator.SetTrigger("Atack"); 
           audioSource.PlayOneShot(pega);
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collisionador) 
+    {
+      if (collisionador.CompareTag("pincho"))
+      {
+        collisionador.transform.GetComponent<Pincho>().DestruirPincho();
+        
+      }   
     }
 
     private void OnDrawGizmos() 

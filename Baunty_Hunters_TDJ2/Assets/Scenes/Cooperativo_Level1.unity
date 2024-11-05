@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 227061733}
   - component: {fileID: 227061732}
   - component: {fileID: 227061734}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Suelo
   m_TagString: Piso
   m_Icon: {fileID: 0}
@@ -4489,6 +4489,7 @@ GameObject:
   - component: {fileID: 347663356}
   - component: {fileID: 347663355}
   - component: {fileID: 347663357}
+  - component: {fileID: 347663358}
   m_Layer: 0
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -4598,6 +4599,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.265625
+--- !u!114 &347663358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347663354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8dcfdce50bb4f44ad7c5900f0ad1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curar: 20
 --- !u!1 &352526366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,9 +4893,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 583706553}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Disparo_Enemigo
-  m_TagString: Untagged
+  m_TagString: pincho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4895,7 +4909,7 @@ Transform:
   m_GameObject: {fileID: 583706552}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -0.39, z: 0}
+  m_LocalPosition: {x: 0.627, y: -0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4910,7 +4924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 611026224}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ControladorGolpe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4926,7 +4940,7 @@ Transform:
   m_GameObject: {fileID: 611026223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.188, y: -0.032, z: 0}
+  m_LocalPosition: {x: 0.344, y: -0.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5469,7 +5483,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06907749}
+  m_Offset: {x: -0.055561543, y: -0.11650801}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5480,7 +5494,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.861845}
+  m_Size: {x: 0.8888769, y: 0.95670605}
   m_EdgeRadius: 0
 --- !u!50 &912625165
 Rigidbody2D:
@@ -6005,9 +6019,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 984525506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Disparo_Enemigo
-  m_TagString: Untagged
+  m_TagString: pincho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6021,7 +6035,7 @@ Transform:
   m_GameObject: {fileID: 984525505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.999962, z: 0.008726558, w: 0}
-  m_LocalPosition: {x: -0.75, y: -0.36, z: -0.01}
+  m_LocalPosition: {x: -1.03, y: -0.3, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6112,7 +6126,7 @@ Transform:
   m_GameObject: {fileID: 1153962144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.02, y: 16.762, z: 0}
+  m_LocalPosition: {x: -12.54, y: 16.82, z: 0}
   m_LocalScale: {x: 2.3, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6382,7 +6396,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163613690}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6634,6 +6648,8 @@ GameObject:
   - component: {fileID: 1276404008}
   - component: {fileID: 1276404010}
   - component: {fileID: 1276404009}
+  - component: {fileID: 1276404012}
+  - component: {fileID: 1276404011}
   m_Layer: 0
   m_Name: Agua
   m_TagString: Agua
@@ -6851,6 +6867,54 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1276404011
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276404007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
+--- !u!114 &1276404012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276404007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ba9b920db1a9e4cbdd2ca4dc95a854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316939935
 GameObject:
   m_ObjectHideFlags: 0
@@ -6906,7 +6970,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00222373, y: -0.037449837}
+  m_Offset: {x: 0.047887802, y: -0.037449837}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6917,7 +6981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8953061, y: 1.2295971}
+  m_Size: {x: 0.80397797, y: 1.2295971}
   m_EdgeRadius: 0
 --- !u!50 &1316939938
 Rigidbody2D:
@@ -7007,7 +7071,7 @@ Transform:
   m_GameObject: {fileID: 1316939935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.35, y: 16.64, z: 0}
+  m_LocalPosition: {x: -3.286, y: 16.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8878,7 +8942,7 @@ Transform:
   m_GameObject: {fileID: 2085108805}
   serializedVersion: 2
   m_LocalRotation: {x: -0.008726465, y: 0, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 2.57, y: 3.37, z: -0.08}
+  m_LocalPosition: {x: 2.57, y: 3.4, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Movimiento_y_ataque : MonoBehaviour
@@ -62,6 +64,10 @@ public class Movimiento_y_ataque : MonoBehaviour
         if (collision.gameObject.CompareTag("Piso"))
         {
             salto = 0; // Resetea el contador de saltos al tocar el suelo
+        }
+        if(collision.gameObject.CompareTag("Agua"))
+        {
+            SceneManager.LoadScene("GameOverCoop");
         }
     }
 }
