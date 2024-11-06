@@ -5403,7 +5403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 5
+  vida: 3
   efectoMuerte: {fileID: 0}
 --- !u!95 &688279909
 Animator:
@@ -5669,7 +5669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 5
+  vida: 3
   efectoMuerte: {fileID: 0}
 --- !u!114 &912625169
 MonoBehaviour:
@@ -6408,7 +6408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControladorGolpe: {fileID: 611026224}
   radioGolpe: 0.8
-  "da\xF1oGolpe": 20
+  "da\xF1oGolpe": 1
   tiempoEntreAtaques: 0.5
   tiempoSiguienteAtaque: 0
   pega: {fileID: 8300000, guid: 569ca9ce35c8c3a4aabc3d6d84f3ed5a, type: 3}
@@ -7266,7 +7266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 5
+  vida: 3
   efectoMuerte: {fileID: 0}
 --- !u!114 &1316939942
 MonoBehaviour:
@@ -7435,7 +7435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  vida: 3
   efectoMuerte: {fileID: 0}
 --- !u!50 &1347809432
 Rigidbody2D:
