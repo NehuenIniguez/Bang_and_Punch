@@ -5809,7 +5809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  vida: 5
   efectoMuerte: {fileID: 0}
 --- !u!114 &912625169
 MonoBehaviour:
@@ -5825,7 +5825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 583706553}
   Pincho: {fileID: 9166511966130632604, guid: 4d533ffc2c52b3844b596d8fad5c7e25, type: 3}
-  tiempoEntreDisparos: 2.5
+  tiempoEntreDisparos: 3
   disparoPincho: {fileID: 8300000, guid: a74b3118efabf644ca1a745aa98981de, type: 3}
 --- !u!82 &912625170
 AudioSource:
@@ -7296,7 +7296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53aa7902ba55ab9429aee49a02f76f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  vida: 5
   efectoMuerte: {fileID: 0}
 --- !u!114 &1316939942
 MonoBehaviour:
@@ -7312,7 +7312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Disparo_Enemigo: {fileID: 984525506}
   Pincho: {fileID: 9166511966130632604, guid: 4d533ffc2c52b3844b596d8fad5c7e25, type: 3}
-  tiempoEntreDisparos: 2
+  tiempoEntreDisparos: 3
   disparoPincho: {fileID: 8300000, guid: a74b3118efabf644ca1a745aa98981de, type: 3}
 --- !u!82 &1316939943
 AudioSource:
