@@ -4977,7 +4977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df43f27b7e3c04c4aae50a0e972a3302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaPared: 60
+  vidaPared: 3
   seCae: {fileID: 8300000, guid: 2bbb115a76b72f344be1a9f4536104e2, type: 3}
 --- !u!50 &669286095
 Rigidbody2D:
@@ -6715,7 +6715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df43f27b7e3c04c4aae50a0e972a3302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaPared: 60
+  vidaPared: 3
   seCae: {fileID: 8300000, guid: 2bbb115a76b72f344be1a9f4536104e2, type: 3}
 --- !u!82 &1163613696
 AudioSource:
