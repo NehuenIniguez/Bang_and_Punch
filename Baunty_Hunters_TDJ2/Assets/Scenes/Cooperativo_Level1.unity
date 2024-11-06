@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 30494686}
   - component: {fileID: 30494685}
   - component: {fileID: 30494684}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Corazones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5042,7 +5042,7 @@ Transform:
   m_GameObject: {fileID: 611026223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35, y: -0.032, z: 0}
+  m_LocalPosition: {x: 0.347, y: -0.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5057,7 +5057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 623593461}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6241,7 +6241,7 @@ Transform:
   m_GameObject: {fileID: 984525505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.999962, z: 0.008726558, w: 0}
-  m_LocalPosition: {x: -1.03, y: -0.24, z: -0.02}
+  m_LocalPosition: {x: -1.03, y: -0.02, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6411,7 +6411,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0014272332, y: -0.03464067}
+  m_Offset: {x: -0.020272017, y: -0.03464067}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6422,7 +6422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.57516813, y: 0.93691313}
+  m_Size: {x: 0.43476397, y: 0.93691313}
   m_EdgeRadius: 0
 --- !u!114 &1153962150
 MonoBehaviour:
@@ -9596,49 +9596,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonLleno
       objectReference: {fileID: 0}
-    - target: {fileID: 8453468191984079551, guid: 94c0603a8c87379458819203ddfc2d31, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8453468191984079551, guid: 94c0603a8c87379458819203ddfc2d31, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8672888808702641639}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94c0603a8c87379458819203ddfc2d31, type: 3}
 --- !u!224 &8672888808702641637 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2725601563942713557, guid: 94c0603a8c87379458819203ddfc2d31, type: 3}
   m_PrefabInstance: {fileID: 8672888808702641636}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8672888808702641638 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8453468191984079551, guid: 94c0603a8c87379458819203ddfc2d31, type: 3}
-  m_PrefabInstance: {fileID: 8672888808702641636}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8672888808702641639
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8672888808702641638}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8d0c6e0e282200e4782a62e66d127f07, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
