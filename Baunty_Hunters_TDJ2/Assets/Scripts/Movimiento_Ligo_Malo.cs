@@ -5,13 +5,14 @@ using UnityEngine;
 public class Movimiento_Ligo_Malo : MonoBehaviour
 {
     public float brinco = 0;
-
+    private Animator animator;
     private Rigidbody2D rb2d;
     public bool sePuedeMover = true;
     [SerializeField] private Vector2 velocidadRebte;
     [SerializeField] private float tiempoRetroceso;
     private void Start() {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     
     // Update is called once per frame
@@ -20,24 +21,40 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
        
        if (sePuedeMover)
        { 
-         if (Input.GetKey(KeyCode.D))
-         {
+            if (Input.GetKey(KeyCode.D))    
+            {
+                gameObject.transform.Translate(8f* Time.deltaTime,0,0);
+                animator.SetBool("Camina", true);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
              gameObject.transform.Translate(8f* Time.deltaTime,0,0);
-         }
-         if (Input.GetKey(KeyCode.A))
-         {
-             gameObject.transform.Translate(8f* Time.deltaTime,0,0);
-          }
+             animator.SetBool("Camina", true);
+            }
+            if (Input.GetKeyUp(KeyCode.D))
+            {
+                animator.SetBool("Camina", false);
+            }
+            if (Input.GetKeyUp(KeyCode.A))
+            {
+                animator.SetBool("Camina", false);
+            }
         }
         
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.W) && brinco <2)
         {
+            animator.SetBool("Salta",true);
             //Hacemos que el salto se sume
             rb2d.AddForce(new Vector2(0, 400f));
             brinco = brinco +1;
             Debug.Log(brinco);
+            
+        }
+        if( Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetBool("Salta",false);
         }
     }
     public void Rebote(Vector2 puntoGolpe)

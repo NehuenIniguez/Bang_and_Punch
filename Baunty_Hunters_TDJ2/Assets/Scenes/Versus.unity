@@ -3461,6 +3461,7 @@ GameObject:
   - component: {fileID: 647504676}
   - component: {fileID: 647504675}
   - component: {fileID: 647504678}
+  - component: {fileID: 647504679}
   m_Layer: 0
   m_Name: Square
   m_TagString: Enemigo
@@ -3637,6 +3638,27 @@ MonoBehaviour:
   playerTwo: {fileID: 580468930}
   detectionradius: 5
   speed: 2
+--- !u!95 &647504679
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647504672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f4b3f2b5421b41a7bd6828a257823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &774758849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +3673,7 @@ GameObject:
   - component: {fileID: 774758851}
   - component: {fileID: 774758850}
   - component: {fileID: 774758855}
+  - component: {fileID: 774758856}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Enemigo
@@ -3827,6 +3850,27 @@ MonoBehaviour:
   playerTwo: {fileID: 929842432}
   detectionradius: 5
   speed: 2
+--- !u!95 &774758856
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774758849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f4b3f2b5421b41a7bd6828a257823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &874884528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3960,6 +4004,7 @@ GameObject:
   - component: {fileID: 911613899}
   - component: {fileID: 911613898}
   - component: {fileID: 911613897}
+  - component: {fileID: 911613903}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Enemigo
@@ -4136,6 +4181,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &911613903
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911613896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f4b3f2b5421b41a7bd6828a257823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &929842425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,6 +4446,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaActual: 0
   vidaMaxima: 0
+  animacionVida: {fileID: 0}
+  dosDeVida: {fileID: 0}
+  unoDeVida: {fileID: 0}
+  otroObjetoVida: {fileID: 0}
 --- !u!1 &1091858383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4683,7 +4753,7 @@ Transform:
   m_GameObject: {fileID: 1517993948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -27.534185}
+  m_LocalPosition: {x: 0.02261073, y: -0.00001, z: -27.534185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4826,6 +4896,7 @@ GameObject:
   - component: {fileID: 1566142832}
   - component: {fileID: 1566142831}
   - component: {fileID: 1566142836}
+  - component: {fileID: 1566142837}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Enemigo
@@ -5002,6 +5073,27 @@ MonoBehaviour:
   playerTwo: {fileID: 929842432}
   detectionradius: 5
   speed: 2
+--- !u!95 &1566142837
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566142830}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f4b3f2b5421b41a7bd6828a257823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1699102862
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5108,7 @@ GameObject:
   - component: {fileID: 1699102865}
   - component: {fileID: 1699102864}
   - component: {fileID: 1699102863}
+  - component: {fileID: 1699102869}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Enemigo
@@ -5192,6 +5285,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1699102869
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699102862}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f1f4b3f2b5421b41a7bd6828a257823, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

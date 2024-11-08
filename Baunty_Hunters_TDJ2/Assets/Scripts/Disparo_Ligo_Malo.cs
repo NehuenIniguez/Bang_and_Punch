@@ -5,16 +5,23 @@ using UnityEngine;
 public class Disparo_Ligo_Malo : MonoBehaviour
 {
     [SerializeField] private Transform ControladorDisparo;
-
     [SerializeField] private GameObject bala;
-    
+    private Animator animator;
     private bool esIzquierda = false;
+
+    private void Start() {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
             //dispara
             Disparo();
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            animator.SetBool("Dispara",false);
         }
         if (Input.GetKeyDown(KeyCode.A) && !esIzquierda)
         {
@@ -38,5 +45,7 @@ public class Disparo_Ligo_Malo : MonoBehaviour
     private void Disparo()
     {
         Instantiate(bala, ControladorDisparo.position, ControladorDisparo.rotation);
+        animator.SetBool("Dispara",true);
     }
+    
 }
