@@ -18,14 +18,14 @@ public class Disparo_Ligo : MonoBehaviour
     
     private void Update()
     {
-         if (Input.GetKeyDown(KeyCode.RightControl))
+         if (Input.GetKeyDown(KeyCode.Return))
         {
             animator.SetBool("Dispara", true);
             //dispara
             Disparo();
             audioSource.PlayOneShot(disparo);
         }
-        if (Input.GetKeyUp(KeyCode.RightControl))
+        if (Input.GetKeyUp(KeyCode.Return))
         {
             animator.SetBool("Dispara", false);
         }
