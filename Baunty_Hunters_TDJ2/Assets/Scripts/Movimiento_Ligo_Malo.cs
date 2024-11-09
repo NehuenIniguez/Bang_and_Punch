@@ -45,9 +45,10 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
     private void Update() {
         if (Input.GetKeyDown(KeyCode.W) && brinco <2)
         {
-            animator.SetBool("Salta",true);
+            
             //Hacemos que el salto se sume
             rb2d.AddForce(new Vector2(0, 400f));
+            animator.SetBool("Salta",true);
             brinco = brinco +1;
             Debug.Log(brinco);
             
@@ -80,9 +81,11 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
 
     private IEnumerator DesactivarMovimiento()
     {
+        animator.SetBool("Golpe",true);
         sePuedeMover = false;
         yield return new WaitForSeconds(tiempoRetroceso);
         sePuedeMover = true;
+        animator.SetBool("Golpe", false);
     }
     
 }

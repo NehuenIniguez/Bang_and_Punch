@@ -89,8 +89,10 @@ public class Movimiento_y_ataque : MonoBehaviour
     }
         private IEnumerator DesactivarMovimiento()
     {
+        animator.SetBool("LeDieron", true);
         sePuedeMover = false;
         yield return new WaitForSeconds(tiempoRetroceso);
         sePuedeMover = true;
+        animator.SetBool("LeDieron", false);
     }
 }
