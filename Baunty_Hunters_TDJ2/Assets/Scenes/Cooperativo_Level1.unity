@@ -555,7 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8dcfdce50bb4f44ad7c5900f0ad1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curar: 20
+  puntajeManager: {fileID: 0}
+  curar: 1
 --- !u!58 &113420097
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4609,7 +4610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d97664b595fea840a7654485d494dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curar: 20
+  curar: 1
 --- !u!1 &352526366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6301,6 +6302,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1316939940}
   m_LocalEulerAnglesHint: {x: 1, y: -180, z: 0}
+--- !u!1 &1093947183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093947185}
+  - component: {fileID: 1093947184}
+  m_Layer: 0
+  m_Name: Puntos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1093947184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093947183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dda1aaeea7af4246bb461f58b1dfdc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1093947185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093947183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.588328, y: 8.9896755, z: -0.051425908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1129691890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9566,7 +9611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d97664b595fea840a7654485d494dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curar: 20
+  curar: 1
 --- !u!58 &2088579363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9831,3 +9876,4 @@ SceneRoots:
   - {fileID: 466470732}
   - {fileID: 1129691893}
   - {fileID: 751283191}
+  - {fileID: 1093947185}
