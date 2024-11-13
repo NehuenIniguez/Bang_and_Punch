@@ -6,11 +6,14 @@ public class Disparo_Ligo_Malo : MonoBehaviour
 {
     [SerializeField] private Transform ControladorDisparo;
     [SerializeField] private GameObject bala;
+    [SerializeField] private AudioClip disparo;
     private Animator animator;
+    private AudioSource audioSource;
     private bool esIzquierda = false;
 
     private void Start() {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent <AudioSource>();
     }
     private void Update()
     {
@@ -18,6 +21,7 @@ public class Disparo_Ligo_Malo : MonoBehaviour
         {
             //dispara
             Disparo();
+            audioSource.PlayOneShot(disparo);
         }
         if (Input.GetButtonUp("Jump"))
         {

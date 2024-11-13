@@ -67,7 +67,7 @@ public class Atack : MonoBehaviour
       }
       
       Debug.Log(collisionador);
-      //animator.SetTrigger("Atack"); 
+      animator.SetTrigger("Atack"); 
       audioSource.PlayOneShot(pega);
     }
   }

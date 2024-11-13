@@ -10,9 +10,12 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
     public bool sePuedeMover = true;
     [SerializeField] private Vector2 velocidadRebte;
     [SerializeField] private float tiempoRetroceso;
+    [SerializeField] private AudioClip saltarin;
+    private AudioSource audioSource;
     private void Start() {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     
     // Update is called once per frame
@@ -45,17 +48,17 @@ public class Movimiento_Ligo_Malo : MonoBehaviour
     private void Update() {
         if (Input.GetKeyDown(KeyCode.W) && brinco <2)
         {
-            
+            animator.SetBool("Salto",true);
+            audioSource.PlayOneShot(saltarin);
             //Hacemos que el salto se sume
             rb2d.AddForce(new Vector2(0, 400f));
-            animator.SetBool("Salta",true);
             brinco = brinco +1;
             Debug.Log(brinco);
             
         }
         if( Input.GetKeyUp(KeyCode.W))
         {
-            animator.SetBool("Salta",false);
+            animator.SetBool("Salto",false);
         }
     }
     public void Rebote(Vector2 puntoGolpe)
