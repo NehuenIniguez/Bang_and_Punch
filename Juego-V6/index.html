@@ -106,6 +106,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
+                window.unityInstance = unityInstance; // make instance globally available
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
@@ -118,28 +119,29 @@
       document.body.appendChild(script);
 
     </script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-      import { getAuth, onAuthStateChanged } from "firebase/auth";
-
-      const auth = getAuth(firebaseApp);
-      onAuthStateChanged(auth, user => {
-       // Check for user status
-      });
     
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    
+    <script>
+      // Import the functions you need from the SDKs you need
+  
+      try{   
       // Your web app's Firebase configuration
-      const firebaseConfig = {
+      var firebaseApp = firebase.initializeApp( {
         apiKey: "AIzaSyAJKVSnKO0h_98DFTll5bgNhuAtG3NI-zw",
         authDomain: "test-bangpunch.firebaseapp.com",
         projectId: "test-bangpunch",
         storageBucket: "test-bangpunch.firebasestorage.app",
         messagingSenderId: "880856029079",
         appId: "1:880856029079:web:0a32b90f3a3782c90816d2"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-    </script>
+      });
+      var db = firebaseApp.firestore();
+        var auth = firebaseApp.auth();
+    } catch (error) {
+        console.error("Error initializing Firebase:", error);
+    }
+  </script>
   </body>
 </html>
