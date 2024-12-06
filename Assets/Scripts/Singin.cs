@@ -16,8 +16,8 @@ public class FirebaseAuthWrapper : MonoBehaviour
     public void SignInWithGoogle()
     {
         FirebaseWebGL.Scripts.FirebaseBridge.FirebaseAuth.SignInWithGoogle(
-            gameObject.name, 
-            nameof(OnSignInSuccess), 
+            gameObject.name,
+            nameof(OnSignInSuccess),
             nameof(OnSignInFailure));
     }
 
