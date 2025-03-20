@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Bang_and_Punch-test2.sln"
+    "dotnet.defaultSolution": "Baunty_Hunters_TDJ2.sln"
 }

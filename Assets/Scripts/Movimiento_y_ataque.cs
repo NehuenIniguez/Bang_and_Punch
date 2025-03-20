@@ -27,13 +27,15 @@ public class Movimiento_y_ataque : MonoBehaviour
         {
             if (Input.GetKey("right"))
             {
-                gameObject.transform.Translate(8f* Time.deltaTime,0,0);
+                rb2d.velocity = new Vector2 (8,rb2d.velocity.y);
+                //gameObject.transform.Translate(8f* Time.deltaTime,0,0);
                 animator.SetBool("Derecha", true );   
             }
 
             if (Input.GetKey("left"))
             {
-                gameObject.transform.Translate(8f* Time.deltaTime,0,0);
+                rb2d.velocity = new Vector2 (-1*8,rb2d.velocity.y);
+                //gameObject.transform.Translate(8f* Time.deltaTime,0,0);
                 animator.SetBool("Derecha", true );
             }
 
